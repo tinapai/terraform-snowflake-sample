@@ -137,8 +137,4 @@ resource "snowflake_table" "table" {
     comment = "extra data"
   }
 
-  primary_key {
-    name = "my_key"
-    keys = ["data"]
-  }
 }
