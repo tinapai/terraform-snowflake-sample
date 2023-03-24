@@ -96,7 +96,6 @@ resource "snowflake_table" "table" {
   name                = "table"
   comment             = "A table."
   cluster_by          = ["to_date(DATE)"]
-  data_retention_days = snowflake_schema.schema.data_retention_days
   change_tracking     = false
 
   column {
